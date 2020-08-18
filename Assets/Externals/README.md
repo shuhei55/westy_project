@@ -1,0 +1,2 @@
+AssetStoreでimportしたファイルを置く場所です
+
