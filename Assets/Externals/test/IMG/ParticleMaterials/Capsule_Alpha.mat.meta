@@ -1,9 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Externals/test/IMG/ParticleMaterials/Capsule_Alpha.mat.meta
 guid: a7acfd51e735f4c4289e235df98e36e4
 timeCreated: 1498296952
 licenseType: Store
 NativeFormatImporter:
   mainObjectFileID: 2100000
+=======
+guid: df4722ad7e55b474b8274741ddaae340
+DefaultImporter:
+  externalObjects: {}
+>>>>>>> 135c82cace43cfb4457820c7ed7f0598da29acef:Assets/Scenes/Lv.2.unity.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
