@@ -18,11 +18,32 @@ public class BallControllerScript : MonoBehaviour
     }
 
     public void Button1Pushed() {
-        int random = 0;
+        int random = Random.Range(0,3);
         Instantiate(balls[random],  new Vector3(-2.5f,2f,-0.75f), Quaternion.identity);
     }
 
     public void Button2Pushed() {
-        
+        int random = Random.Range(0, 3);
+        Instantiate(balls[random], new Vector3(-1.5f, 2f, -0.75f), Quaternion.identity);
+    }
+
+    public void Button3Pushed() {
+        int random = Random.Range(0, 3);
+        Instantiate(balls[random], new Vector3(-0.5f, 2f, -0.75f), Quaternion.identity);
+    }
+
+    public void Button4Pushed() {
+        int random = Random.Range(0, 3);
+        Instantiate(balls[random], new Vector3(0.5f, 2f, -0.75f), Quaternion.identity);
+    }
+
+    public void Button5Pushed() { 
+        int random = Random.Range(0, 3);
+        Instantiate(balls[random], new Vector3(1.5f, 2f, -0.75f), Quaternion.identity);
+    }
+
+    public void Button6Pushed(){
+        int random = Random.Range(0, 3);
+        Instantiate(balls[random], new Vector3(2.5f, 2f, -0.75f), Quaternion.identity);
     }
 }
