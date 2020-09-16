@@ -5,6 +5,8 @@ using UnityEngine;
 public class BallControllerScript : MonoBehaviour
 {
     public GameObject[] balls;
+
+    private float[] ball_pos = new float[] {-2.5f, -1.5f,-0.5f,0.5f,1.5f,2.5f};
     // Start is called before the first frame update
     void Start()
     {
@@ -14,36 +16,10 @@ public class BallControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
-    public void Button1Pushed() {
+    public void ButtonPushed(int num) {
         int random = Random.Range(0,3);
-        Instantiate(balls[random],  new Vector3(-2.5f,2f,-0.75f), Quaternion.identity);
-    }
-
-    public void Button2Pushed() {
-        int random = Random.Range(0, 3);
-        Instantiate(balls[random], new Vector3(-1.5f, 2f, -0.75f), Quaternion.identity);
-    }
-
-    public void Button3Pushed() {
-        int random = Random.Range(0, 3);
-        Instantiate(balls[random], new Vector3(-0.5f, 2f, -0.75f), Quaternion.identity);
-    }
-
-    public void Button4Pushed() {
-        int random = Random.Range(0, 3);
-        Instantiate(balls[random], new Vector3(0.5f, 2f, -0.75f), Quaternion.identity);
-    }
-
-    public void Button5Pushed() { 
-        int random = Random.Range(0, 3);
-        Instantiate(balls[random], new Vector3(1.5f, 2f, -0.75f), Quaternion.identity);
-    }
-
-    public void Button6Pushed(){
-        int random = Random.Range(0, 3);
-        Instantiate(balls[random], new Vector3(2.5f, 2f, -0.75f), Quaternion.identity);
+        Instantiate(balls[random],  new Vector3(ball_pos[num],2f,-0.75f), Quaternion.identity);
     }
 }
